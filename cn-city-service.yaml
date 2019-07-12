@@ -8,5 +8,5 @@ management:
       exposure:
         include: '*'      
 hello:
-  there: Hi folks!
+  there: Hi Cognizant folks!
   
