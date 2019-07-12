@@ -8,5 +8,5 @@ management:
       exposure:
         include: '*'      
 hello:
-  there: have time to show this demo
+  there: Hi folks!
   
