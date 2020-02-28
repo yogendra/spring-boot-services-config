@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: city_service
+        uri: lb://cn-city-service
+        predicates:
+          - Path=/v1/cities/**
+      - id: weather_service
+        uri: lb://cn-weather-service
+        predicates:
+          - Path=/v1/weather/**

@@ -1,9 +1,19 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+service:
+  city: cn-city-service
+  weather: cn-weather-service
+  protocol: http
 spring:
-  main:
-    allow-bean-definition-overriding: true
-        
+  cloud:
+    discovery:
+      enabled: true
+    gateway:
+      # discovery:
+      #   locator:
+      #     enabled: true
+      #     url-expression: "'lb://'+serviceId"
+      #     lower-case-service-id: true
+      enabled: true
+      httpclient:
+        ssl:
+          use-insecure-trust-manager: true
+
