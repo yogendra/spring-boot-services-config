@@ -1,7 +1,7 @@
 service:
   city: cn-city-service
   weather: cn-weather-service
-  protocol: lb
+  protocol: http
 spring:
   cloud:
     discovery:
