@@ -10,7 +10,7 @@ spring:
       # discovery:
       #   locator:
       #     enabled: true
-      #     url-expression: "'lb://'+serviceId"
+      #     url-expression: "'http://'+serviceId"
       #     lower-case-service-id: true
       enabled: true
       httpclient:

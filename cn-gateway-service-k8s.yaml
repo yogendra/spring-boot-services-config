@@ -3,10 +3,10 @@ spring:
     gateway:
       routes:
       - id: city_service
-        uri: http://cn-city-service
+        uri: cn-city-service
         predicates:
           - Path=/v1/cities/**
       - id: weather_service
-        uri: http://cn-weather-service
+        uri: cn-weather-service
         predicates:
           - Path=/v1/weather/**
