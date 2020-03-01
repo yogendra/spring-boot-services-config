@@ -8,10 +8,10 @@ spring:
       enabled: true
     gateway:
       discovery:
-        locator:
-          enabled: true
-          url-expression: "'http://'+serviceId"
-          lower-case-service-id: true
+        # locator:
+        #   enabled: true
+        #   url-expression: "'http://'+serviceId"
+        #   lower-case-service-id: true
       enabled: true
       httpclient:
         ssl:
