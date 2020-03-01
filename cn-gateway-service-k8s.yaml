@@ -17,3 +17,5 @@ spring:
           - Path=/cf/v1/cities/**    
         filters:
           - StripPrefix=1
+      - id: gateway_service
+        uri: http://cn-gateway-service:8080
