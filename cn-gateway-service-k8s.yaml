@@ -1,5 +1,8 @@
 spring:
   cloud:
+    kubernetes:
+      discovery:
+        service-name: cn-gateway-service
     gateway:
       routes:
       - id: city_service
