@@ -1,7 +1,7 @@
 service:
-  city: cn-city-service
-  weather: cn-weather-service
-  protocol: http
+  city: http://cn-city-service
+  weather: http://cn-weather-service
+  fallback: https://cn-gateway-service.apps.pcfone.io
 spring:
   cloud:
     discovery:
