@@ -10,3 +10,10 @@ spring:
         uri: http://cn-weather-service:8080
         predicates:
           - Path=/v1/weather/**
+      - id: fallback_service
+        uri: https://cn-gateway-service.apps.pcfone.io
+        predicates:
+          - Path=/cf/v1/weather/**
+          - Path=/cf/v1/cities/**    
+        filters:
+          - StripPrefix=1
