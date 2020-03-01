@@ -3,17 +3,16 @@ spring:
     gateway:
       routes:
       - id: city_service
-        uri: http://cn-city-service:8080
+        uri: http://cn-city-service
         predicates:
           - Path=/v1/cities/**
       - id: weather_service
-        uri: http://cn-weather-service:8080
+        uri: http://cn-weather-service
         predicates:
           - Path=/v1/weather/**
       - id: fallback_service
         uri: https://cn-gateway-service.apps.pcfone.io
         predicates:
-          - Path=/cf/v1/weather/**
-          - Path=/cf/v1/cities/**    
+          - Path=/cf/v1/weather/**,/cf/v1/cities/**
         filters:
           - StripPrefix=1        
