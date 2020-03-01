@@ -7,11 +7,11 @@ spring:
     discovery:
       enabled: true
     gateway:
-      # discovery:
-      #   locator:
-      #     enabled: true
-      #     url-expression: "'http://'+serviceId"
-      #     lower-case-service-id: true
+      discovery:
+        locator:
+          enabled: true
+          url-expression: "'http://'+serviceId"
+          lower-case-service-id: true
       enabled: true
       httpclient:
         ssl:
