@@ -7,4 +7,4 @@ spring:
         predicates:
           - Path=/cf/v1/weather/**,/cf/v1/cities/**
         filters:
-          - StripPrefix=1        
+          - StripPrefix=1

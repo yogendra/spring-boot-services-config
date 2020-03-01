@@ -11,8 +11,6 @@ spring:
         predicates:
           - Path=/v1/weather/**
       - id: fallback_service
-        uri: https://cn-gateway-service.apps.pcfone.io
+        uri: http://cn-egateway-service
         predicates:
           - Path=/cf/v1/weather/**,/cf/v1/cities/**
-        filters:
-          - StripPrefix=1        
