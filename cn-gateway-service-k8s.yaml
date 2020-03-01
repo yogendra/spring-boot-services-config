@@ -19,3 +19,6 @@ spring:
           - StripPrefix=1
       - id: gateway_service
         uri: http://cn-gateway-service:8080
+        predicates:
+          - Path=/
+        
