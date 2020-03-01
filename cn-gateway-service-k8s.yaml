@@ -16,9 +16,4 @@ spring:
           - Path=/cf/v1/weather/**
           - Path=/cf/v1/cities/**    
         filters:
-          - StripPrefix=1
-      - id: gateway_service
-        uri: http://cn-gateway-service:8080
-        predicates:
-          - Path=/
-        
+          - StripPrefix=1        
