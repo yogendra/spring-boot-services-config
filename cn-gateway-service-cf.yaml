@@ -11,14 +11,14 @@ spring:
         predicates:
           - Path=/v1/weather/**
     cloudfoundry:
-      url: 
-      username: 
-      password: 
+      # url: 
+      # username: 
+      # password: 
+      # org: 
+      # space: 
       discovery:
         use-dns: true
         default-server-port: 61001
         use-container-ip: true
         enabled: true
         internal-domain: apps.internal
-      org: 
-      space: 
